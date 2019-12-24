@@ -43,15 +43,13 @@ let testArray = [
 
 async function main() {
   try {
-    console.log('')
-    console.log('')
-    console.log('')
-    console.log('-------------------')
     console.log('Total:', testArray.length);
+    let result = await apiTest.getBalance('WAN', '0x4e6b5f1abdd517739889334df047113bd736c546');
+    console.log('balance:', result);
 
-    testArray.forEach(async (value, index) => {
-      await apiCall(value[0], value[1], value[2]);
-    })
+    for (let i=0; i<testArray.length; i++) {
+      await apiCall(testArray[i][0], testArray[i][1], testArray[i][2]);
+    }
   } catch (err) {
     console.log(err);
   }
