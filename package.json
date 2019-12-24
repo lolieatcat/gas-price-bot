@@ -1,0 +1,10 @@
+{
+  "name": "iWan-time-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "molin",
+  "license": "MIT",
+  "dependencies": {
+    "iwan-sdk": "^1.1.1"
+  }
+}
