@@ -50,10 +50,13 @@ async function main() {
     for (let i=0; i<testArray.length; i++) {
       await apiCall(testArray[i][0], testArray[i][1], testArray[i][2]);
     }
+    apiTest.close();
+    process.exit(0);
   } catch (err) {
     console.log(err);
+    apiTest.close();
+    process.exit(1);
   }
-  apiTest.close();
 }
 
 let count = 0;
