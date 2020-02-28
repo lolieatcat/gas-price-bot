@@ -6,7 +6,7 @@ let YourSecretKey = "7897dde450229bb1da66c8cda21639d95b0248949ad48c1b618f99f2b7e
 
 //Subject to https://iwan.wanchain.org
 let option = {
-  url: "api.wanchain.org",
+  url: "api2.wanchain.org",
   port: 8443,
   flag: "ws",
   version: "v3"
