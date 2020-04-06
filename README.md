@@ -1,5 +1,5 @@
-# iWan-time-test
-test for iWan delay.
+# gas-price-bot
+a bot for gas price.
 
 ```
 npm i
