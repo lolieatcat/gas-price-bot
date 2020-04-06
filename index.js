@@ -37,7 +37,9 @@ let keyAObj = { version: keystore.version, crypto: keystore.crypto };
 var privKeyA = keythereum.recover(keyPassword, keyAObj);
 let privateKey = privKeyA;
 let myAddr = '0x' + keystore.address;
+//-------------Change gas price here-------------
 let targetGas = 220000000000;
+//-----------------------------------------------
 let gGasLimit = '0x' + (200000).toString(16);
 let gGasPrice = '0x' + (targetGas).toString(16);
 var gValue = '0x0';
